@@ -29,6 +29,11 @@ variable  "keypair" {
   description = "OpenStack public key to inject"
 }
 
+variable  "keypair_name" {
+  description = "OpenStack public key name"
+  default = "keypair"
+}
+
 variable  "image_id" {
   description = "OpenStack Image ID to provision"
 }

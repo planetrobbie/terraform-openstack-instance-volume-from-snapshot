@@ -29,7 +29,7 @@ resource "openstack_blockstorage_volume_v2" "vol-01" {
 #}
 
 resource "openstack_compute_keypair_v2" "yet-keypair" {
-  name       = "yet-keypair"
+  name       = var.keypair_name
   public_key = var.keypair
 }
 
